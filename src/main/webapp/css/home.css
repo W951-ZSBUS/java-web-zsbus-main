@@ -1,0 +1,105 @@
+.handbookpic {
+	margin: auto;
+	width: 1024px;
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+
+.notice {
+	width: 45%;
+	display: inline-block;
+	margin: 20px 0;
+	border: 1px solid #898989;
+	margin-left: 30px;
+}
+
+.notice:last-child {
+	
+}
+
+.noticelist {
+	border-bottom: 1px dotted #898989;
+	padding: 8px;
+}
+
+.noticeimg {
+	width: 32px;
+	height: 32px;
+}
+
+.noticemore {
+	width: 32px;
+	height: 32px;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.noticemore:hover {
+	-webkit-transform: translateX(5px);
+	-moz-transform: translateX(5px);
+	transform: translateX(5px);
+}
+
+.noticetitle {
+	font-size: 22px;
+	padding-left: 10px;
+	padding-top: 0;
+	position: absolute;
+}
+
+.noticeul {
+	padding: 10px;
+}
+
+.noticeul ul {
+	margin-left: 15px;
+	padding: 0;
+}
+
+.noticeul ul li {
+	margin-bottom: 5px;
+}
+
+.noticeul ul li span {
+	float: right;
+}
+
+.proposal {
+	margin-left: 40px;
+	font-size: 18px;
+	line-height: 20px;
+}
+
+.friendlink {
+	margin: auto;
+	position: relative;
+	background: #f3f5f2;
+	width: 100%;
+	height: auto;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border-bottom: 1px dotted #a0a0a0;
+	overflow: hidden;
+}
+
+.friendlinkul ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.friendlinkul ul li {
+	text-decoration: none;
+	float: left;
+	margin-left: 30px;
+}
+
+.friendlinkul ul li:first-child {
+	margin-left: 0;
+	color: #4a84f7;
+	font-size: 1.1rem;
+	margin-top: -1px;
+}

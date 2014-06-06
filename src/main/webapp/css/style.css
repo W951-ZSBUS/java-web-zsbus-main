@@ -1,0 +1,443 @@
+body { margin:0px; padding:0px;}
+html {
+	background:url(../images/fabric_of_squares_gray.png);
+	font-family:'Microsoft YaHei','Apple LiGothic Medium','Microsoft JhengHei';
+	font-size:14px;
+	color:#666;
+}
+
+img {
+	border:0;
+}
+
+::-moz-selection{background:#ff6b6b; color:#fff;}
+::selection {background:#ff6b6b; color:#fff;}
+h3 {
+	font-family:'Microsoft YaHei';
+	color:#333;
+	margin-bottom:5px;
+	text-indent:0em; 
+	}
+h4 {
+	font-family:'Microsoft YaHei';
+	font-weight:100;
+	text-indent:0em; 
+	}
+h5 {
+	font-family:'FangSong';
+	font-weight:100;
+	margin-top:25px;
+	}
+a {
+	color:#555;
+	-webkit-transition:all 0.3s ease;
+	-moz-transition:all 0.3s ease;
+	transition:all 0.3s ease;
+	}
+a:link {
+	text-decoration:none;
+	color:#555;
+	}
+a:hover {
+	text-decoration:none;
+	color:#ff6b6b;
+	}
+.nav_list_li a {
+	color:#adb3ba;
+	}
+.nav_list_li a:hover {
+	color:#fff;
+	}
+
+
+
+#banner {
+	/*-webkit-background:linear-gradient(to right,#2071af 0%,rgba(22,101,162,0) 20%,rgba(22,101,162,0) 80%,#2071af 100%);
+	background:linear-gradient(to right,#2071af 0%,rgba(22,101,162,0) 20%,rgba(22,101,162,0) 80%,#2071af 100%);*/
+	position:relative;
+	background:#2071af;
+	width:100%;
+	height:auto;
+	z-index:-1;
+	}
+#banner img {
+	position:relative;
+	display:block;
+	width:100%;
+	height:auto;
+	}
+#bannershadow {
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	box-shadow:inset 0 5 10px rgba(0,0,0,0.3);
+	z-index:99;
+	}
+	
+.content {
+	margin:auto;
+	position:relative;
+	width:100%;
+	height:auto;
+	padding-top:60px;
+	padding-bottom:50px;
+	border-bottom:1px dotted #a0a0a0;
+	overflow:hidden;
+	}
+.title {
+	margin:auto;
+	background:#4a84f7;
+	border-radius:40px;
+	width:160px;
+	height:42px;
+	color:#fff;
+	line-height:42px;
+	text-align:center;
+	font-size:24px;
+	letter-spacing:1px;
+	text-shadow:2px 2px 2px #2657b8;
+}
+
+/*---------------------------------乘车指南---------------------------------*/
+.article {
+	position:relative;
+	margin-left:13%;
+	display:inline-block;
+	overflow:hidden;
+	-webkit-transition:all 0.2s ease;
+	-moz-transition:all 0.2s ease;
+	-ms-transition:all 0.2s ease;
+	-o-transition:all 0.2s ease;
+	transition:all 0.2s ease;
+}
+.article:first-child {
+	margin:0;
+	}
+.article:hover {
+	box-shadow:0 10px 10px #666;
+	cursor:pointer;
+	}
+.buspic {
+	display:block;
+	width:248px;
+	height:auto;
+	}
+.blackbg {
+	position:absolute;
+	background:rgba(0,0,0,0.7);
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	opacity:0;
+	-webkit-transition:all 0.2s ease;
+	-moz-transition:all 0.2s ease;
+	-ms-transition:all 0.2s ease;
+	-o-transition:all 0.2s ease;
+	transition:all 0.2s ease;
+	}
+.article:hover .blackbg {
+	opacity:1;
+	}
+.zoom {
+	position:absolute;
+	width:32px;
+	height:32px;
+	top:35%;
+	margin-top:-96px;
+	left:50%;
+	margin-left:-16px;
+	-webkit-transition:all 0.2s ease;
+	-moz-transition:all 0.2s ease;
+	-ms-transition:all 0.2s ease;
+	-o-transition:all 0.2s ease;
+	transition:all 0.2s ease;
+	}
+.article:hover .zoom {
+	-webkit-transform:translateY(80px);
+	-moz-transform:translateY(80px);
+	-ms-transform:translateY(80px);
+	-o-transform:translateY(80px);
+	transform:translateY(80px);
+	}
+.handbooktext {
+	position:absolute;
+	font-size:18px;
+	font-family:'FangSong';
+	color:#fff;
+	top:65%;
+	margin-top:79px;
+	left:50%;
+	margin-left:-39px;
+	-webkit-transition:all 0.2s ease;
+	-moz-transition:all 0.2s ease;
+	-ms-transition:all 0.2s ease;
+	-o-transition:all 0.2s ease;
+	transition:all 0.2s ease;
+	}
+.article:hover .handbooktext {
+	-webkit-transform:translateY(-80px);
+	-moz-transform:translateY(-80px);
+	-ms-transform:translateY(-80px);
+	-o-transform:translateY(-80px);
+	transform:translateY(-80px);
+	}
+/*---------------------------------乘车指南结束---------------------------------*/
+
+/*---------------------------------地图查找---------------------------------*/
+.findmap {
+	position:relative;
+	padding:5px;
+	margin-left:7.6%;
+	display:inline-block;
+	text-align:center;
+	overflow:hidden;
+}
+.findmap:first-child {
+	margin:0;
+	}
+.findmappic {
+	position:relative;
+	width:126px;
+	height:126px;
+	border:1px solid #abbfe8;
+	border-radius:50%;
+	-webkit-transition:all 0.7s ease;
+	-moz-transition:all 0.7s ease;
+	-ms-transition:all 0.7s ease;
+	-o-transition:all 0.7s ease;
+	transition:all 0.7s ease;
+	}
+.findmappic:hover {
+	-webkit-transform:rotate(360deg);
+	-moz-transform:rotate(360deg);
+	transform:rotate(360deg);
+	box-shadow:0 0 5px #bbb;
+	border:1px solid #718dc6;
+	cursor:pointer;
+	}
+.mappic {
+	position:absolute;
+	width:42px;
+	height:42px;
+	top:50%;
+	left:50%;
+	margin-top:-21px;
+	margin-left:-21px;
+	}
+.findmap p {
+	margin-top:20px;
+	}
+/*---------------------------------地图查找结束---------------------------------*/
+
+/*---------------------------------底部---------------------------------*/
+footer {
+	background:#3e434a;
+	color:adb3ba;
+	width:100%;
+	height:auto;
+}
+#fotext {
+	margin:0 auto;
+	padding-top:53px;
+	text-align:center;
+	color:#adb3ba;
+}
+#fopic {
+	margin:0 auto;
+	margin-top:20px;
+	text-align:center;
+	padding-bottom:53px;
+}
+/*---------------------------------底部结束---------------------------------*/
+
+/*---------------------------------返回顶部---------------------------------*/
+.backToTop {
+	position:fixed;
+	right:0px;
+	bottom:265px;
+	width:48px;
+	height:48px;
+	background:#4a84f7;
+	
+	-webkit-transition:all .15s ease-in;
+	-moz-transition:all .15s ease-in;
+	-ms-transition:all .15s ease-in;
+	-o-transition:all .15s ease-in;
+	transition:all .15s ease-in;
+	}
+.backToTop:hover {
+	background:#ff6b6b;
+	cursor:pointer;
+	}
+.backToTop:active {
+	background:#666;
+	box-shadow:inset 1px 1px 10px #000;
+	}
+.backToTop img {
+	width:28px;
+	height:28px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-top:-14px;
+	margin-left:-14px;
+	}
+/*---------------------------------返回顶部结束---------------------------------*/	
+
+/*---------------------------------车身广告---------------------------------*/	
+.adtext {
+	margin:auto;
+	width:1024px;
+	padding-top:40px;
+	padding-bottom:20px;
+	line-height:30px;
+	}
+.ad {
+	margin-left:23.2%;
+	display:inline-block;
+	text-align:center;
+	}
+.ad:first-child {
+	margin:0;
+	}
+.adpic {
+	width:180px;
+	height:180px;
+	}
+/*---------------------------------车身广告结束---------------------------------*/
+
+/*---------------------------------新闻详情---------------------------------*/	
+.newstitle {
+	margin:auto;
+	width:1024px;
+	text-align:center;
+	line-height:10px;
+	border-bottom:1px dotted #a0a0a0;
+	}
+.newspic {
+	margin:auto;
+	width:1024px;
+	margin-top:30px;
+	text-align:center;
+	line-height:10px;
+	}
+.newstext {
+	margin:auto;
+	width:1024px;
+	margin-top:30px;
+	margin-bottom:30px;
+	font-family:'宋体';
+	line-height:25px;
+	text-align:justify;
+	text-indent:2em; 
+	}
+/*---------------------------------新闻详情结束---------------------------------*/	
+
+/*---------------------------------公交新闻---------------------------------*/	
+.buslist {
+	margin:auto;
+	width:1024px;
+	padding-top:40px;
+	padding-bottom:20px;
+	line-height:30px;
+	}
+.buslist ul {
+	margin-left:15px;
+	padding:0;
+	}
+.buslist ul li {
+	margin-bottom:5px;
+	}
+.buslist ul li span {
+	float:right;
+	}
+.pagebreak {
+	width:80px;
+	height:28px;
+	color:#4a84f7;
+	border:1px solid #4a84f7;
+	border-radius:18px;
+	text-align:center;
+	line-height:28px;
+	float:left;
+	
+	-webkit-transition:all .5s;
+	-moz-transition:all .5s;
+	-ms-transition:all .5s;
+	-o-transition:all .5s;
+	transition:all .5s;
+	}
+.pagebreak:hover {
+	background:#4a84f7;
+	color:white;
+	cursor:pointer;
+	}
+.pagebreak:last-child {
+	float:right;
+	}
+	
+.pagebreakgrey {
+	width:80px;
+	height:28px;
+	color:#666;
+	border:1px solid #666;
+	border-radius:18px;
+	text-align:center;
+	line-height:28px;
+	float:left;
+	
+	-webkit-transition:all .5s;
+	-moz-transition:all .5s;
+	-ms-transition:all .5s;
+	-o-transition:all .5s;
+	transition:all .5s;
+	}
+.pagebreakgrey:hover {
+	background:#666;
+	color:white;
+	cursor:no-drop;
+	}
+.pagebreakgrey:last-child {
+	float:right;
+	}
+/*---------------------------------公交新闻结束---------------------------------*/	
+
+/*---------------------------------公司简介---------------------------------*/	
+.company {
+	margin:auto;
+	width:1024px;
+	margin-top:30px;
+	padding-bottom:20px;
+	}
+.companyprofile {
+	font-family:'宋体';
+	line-height:25px;
+	text-align:justify;
+	text-indent:2em; 
+	}
+/*---------------------------------公司简介结束---------------------------------*/	
+
+/*---------------------------------人才招聘---------------------------------*/	
+.hrtable {
+	border:2px solid #888;
+	}
+table {
+	border-collapse: collapse;
+	}
+th {
+	border: 1px solid #888;
+	width:180px;
+	color:#333;
+	font-size:16px;
+	padding:35px auto;
+	}
+td {
+	border: 1px solid #888;
+	padding:35px 30px;
+	}
+/*---------------------------------人才招聘结束---------------------------------*/	
+
+

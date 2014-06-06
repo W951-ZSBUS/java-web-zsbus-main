@@ -1,0 +1,176 @@
+#bgbox {
+	width:100%;
+	height:80px;
+	position:relative;
+	background:#ffffff;
+	box-shadow:inset 0px 2px 0px #4a79d6,
+				0 0 5px rgba(0,0,0,0.5);
+	z-index:99;
+	}
+#logo {
+	position:relative;
+	padding-left:3%;
+	height:80px;
+	width:auto;
+	float:left;
+	overflow:hidden;
+	}
+#logopc {
+	position:relative;
+	width:36px;
+	height:36px;
+	top:50%;
+	margin-top:-18px;
+	float:left;
+	-moz-animation:logopc 3s ease-out 1s;
+	-webkit-animation:logopc 2s;
+	-o-animation:logopc 2s;
+	animation:logopc 3s;
+	}
+#logotx {
+	margin-top:21px;
+	display:block;
+	margin-left:45px;
+	-moz-animation:logotx 3s ease-out 1s;
+	-webkit-animation:logotx 2s;
+	-o-animation:logotx 2s;
+	animation:logotx 2s;
+	}
+#logotxcn {
+	position:relative;
+	-moz-animation:logotxcn 3s ease-out 1s;
+	-webkit-animation:logotxcn 2s;
+	-o-animation:logotxcn 2s;
+	animation:logotxcn 3s;
+	}
+#logotxen {
+	position:relative;
+	margin-top:4px;
+	-moz-animation:logotxen 3s ease-out 1s;
+	-webkit-animation:logotxen 2s;
+	-o-animation:logotxen 2s;
+	animation:logotxen 3s;
+	}
+.nav {
+	display:block;
+	float:right;
+	margin-right:3%;
+	}
+.nav ul {
+	margin-top:0px;
+	}
+.nav ul li {
+	display:block;
+	float:left;
+	width:90px;
+	height:80px;
+	text-align:center;
+	line-height:78px;
+	font-size:13px;
+	-webkit-transition:all .25s linear; 
+	-moz-transition:all .25s linear; 
+	-ms-transition:all .25s linear; 
+	-o-transition:all .25s linear; 
+	transition:all .25s linear;
+	}
+.nav ul li:hover {
+	text-shadow:0px 0px 5px rgba(0,73,80,0.5);
+	background:#f2f3f6;
+	box-shadow:inset 0px 2px 0px #4a79d6;
+	cursor:default;
+}
+
+/*-----------------------------------次级导航---------------------------------*/
+.nav_list {
+	float:left;
+	display:none;
+	margin-top:2px;
+	}
+.nav ul li:hover .nav_list {
+	display:block;
+	}
+.nav_list_li {
+	width:auto;
+	height:32px;
+	text-align:left;
+	background:#414146;
+	padding-right:19px;
+	white-space:nowrap;
+	padding-left:19px;
+	line-height:32px;
+	color:#adb3ba;
+	border-bottom:1px dotted #666;
+	
+	-webkit-transition:all .25s linear;
+	-moz-transition:all .25s linear;
+	-ms-transition:all .25s linear;
+	-o-transition:all .25s linear;
+	transition:all .25s linear;
+	}
+.nav_list_li:last-child {
+	border-bottom:none;
+	}
+.nav_list_li:hover {
+	background:#242434;
+	padding-left:22px;
+	padding-right:16px;
+	color:#fff;
+	height:32px;
+	box-shadow:none;
+	}
+	
+/*logopc*/
+@-webkit-keyframes logopc
+{
+from{ -webkit-transform:rotate(0deg);left:-50px;opacity:0;}
+to{ -webkit-transform:rotate(360deg);left:0px;opacity:1;}
+}
+@-moz-keyframes logopc
+{
+from{ -moz-transform:rotate(0deg);left:-50px; opacity:0;}
+to{ -moz-transform:rotate(360deg);left:0px;opacity:1;}
+}
+@-o-keyframes logopc
+{
+from{ -o-transform:rotate(0deg);left:-50px; top:0px; opacity:0;}
+to{ -o-transform:rotate(360deg);left:0px; top:0px; opacity:1;}
+}
+@keyframes logopc
+{
+from{ transform:rotate(0deg);left:-50px; opacity:0;}
+to{ transform:rotate(360deg);left:0px;opacity:1;}
+}
+
+/*logotxen*/
+@-webkit-keyframes logotxen
+{
+from{left:0px; top:50px; opacity:0;}
+to{ left:0px; top:0px; opacity:1;}
+}
+@-moz-keyframes logotxen
+{
+from{left:0px; top:50px; opacity:0;}
+to{ left:0px; top:0px; opacity:1;}
+}
+@keyframes logotxen
+{
+from{ left:0px; top:50px; opacity:0;}
+to{ left:0px; top:0px; opacity:1;}
+}
+
+/*logotxcn*/
+@-webkit-keyframes logotxcn
+{
+from{left:0px; top:-50px; opacity:0;}
+to{left:0px; top:0px; opacity:1;}
+}
+@-moz-keyframes logotxcn
+{
+from{ left:0px; top:-50px; opacity:0;}
+to{ left:0px; top:0px; opacity:1;}
+}
+@keyframes logotxcn
+{
+from{ left:0px; top:-50px; opacity:0;}
+to{ left:0px; top:0px; opacity:1;}
+}
